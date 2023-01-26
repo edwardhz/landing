@@ -1,15 +1,25 @@
-import React from 'react'
+import React,{useState} from 'react'
+
 
 const Header = () => {
+
+    const [show,setShow]=useState(false);
+
+    const handleToggle = ()=>{
+        setShow(!show);     
+    }
+
   return (
+    <>
     <header>
-        <div className='logo'>_Edward_Hernandez</div>
-        <div className='hamburger'>
+        
+        <div className='logo' >_Edward_Hernandez</div>
+            <div className='hamburger' onClick={handleToggle}>
             <div className='line'></div>
             <div className='line'></div>
             <div className='line'></div>
         </div>
-        <nav className='nav-bar'>
+        <nav className={show ? 'mobile' : 'nav-bar'}>
             <ul>
                 <li>
                     <a href="" className='active'>Home</a>
@@ -22,8 +32,10 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
-
+    
     </header>
+    </>
+    
   )
 }
 
