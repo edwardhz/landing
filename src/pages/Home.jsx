@@ -7,7 +7,13 @@ import {motion} from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
 
 
+
+
+
 const Home = () => {
+
+
+
   return (
     <>
     <Header/>
@@ -40,7 +46,8 @@ const Home = () => {
           exit={{opacity:0}}
           transition={{duration: 0.8}}
           >
-            <SiHtml5 size={50}/>
+            <span><SiHtml5 size={50}/></span>
+            
             <SiCss3 size={50} />
             <SiJavascript size={50}/>
             <SiReact size={50}/>
@@ -122,7 +129,12 @@ const Container = styled.div`
       font-size: 1.5rem;
     }
   }
-
+  svg:hover {
+    transform: scale(1.6);
+  }
+  svg{
+    transition: transform 1s;
+  }
 
 `
 const SkillsContainerIcons = styled(motion.div)`
