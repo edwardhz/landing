@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <>
+      <Header/>
+      <div>Portfolio</div>
+      <Footer/>
+    </>
   )
 }
 

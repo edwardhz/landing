@@ -57,24 +57,7 @@ header{
     text-align: center;
     transition: 0.5s;
 }
-.mobile ul li a{
-    display: block;
-    color: rgb(244, 232, 193);
-    font-size: 20px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 0 5px;
-    margin-bottom: 12px;
-}
-.mobile ul li a:hover{
-    color: rgb(112, 160, 175);
-    background: rgb(244, 232, 193);
-}
-.mobile ul li a.active{
-    color: rgb(112, 160, 175);
-    background: rgb(244, 232, 193);
-}
+
 .mobile{
     height: 350; 
     position: absolute;
@@ -86,6 +69,7 @@ header{
     transition: 0.3s;
     
 }
+
 
 @media only screen and (max-width: 1320px){
     header{
