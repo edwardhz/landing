@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import {DiGithubAlt} from 'react-icons/Di'
-import {SiLinkedin} from 'react-icons/Si'
+import {DiGithubAlt} from 'react-icons/di'
+import {SiLinkedin} from 'react-icons/si'
 
 
 const Footer = () => {

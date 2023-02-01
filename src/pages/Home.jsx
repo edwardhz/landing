@@ -2,7 +2,7 @@ import React from 'react'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import styled from 'styled-components'
-import {SiHtml5,SiCss3,SiJavascript,SiReact,SiLaravel,SiJava,SiPostgresql,SiMysql,SiWebpack} from 'react-icons/Si'
+import {SiHtml5,SiCss3,SiJavascript,SiReact,SiLaravel,SiJava,SiPostgresql,SiMysql,SiWebpack} from 'react-icons/si'
 import {motion} from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
 
