@@ -22,7 +22,13 @@ const Contact = () => {
   return (
     <>
     <Header/>
-    <FormContact ref={form} onSubmit={sendEmail}>
+    <FormContact ref={form} onSubmit={sendEmail}
+    animate={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition={{duration: 0.5}}
+    
+    >
       <label>Name</label>
       <InputForm type="text" name="user_name" required/>
       <label>Email</label>
@@ -38,7 +44,7 @@ const Contact = () => {
   )
 }
 
-const FormContact = styled.form`
+const FormContact = styled(motion.form)`
   margin: 2rem auto;
   min-width: 180px;
   width: 30vw;

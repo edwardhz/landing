@@ -28,6 +28,8 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@emailjs/browser": "^3.10.0",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
     "babel-loader": "^9.1.2",
     "framer-motion": "^8.5.5",
     "html-loader": "^4.2.0",

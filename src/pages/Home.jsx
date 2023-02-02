@@ -61,7 +61,7 @@ const Home = () => {
           >
             <SiPostgresql size={50}/>
             <SiJava size={50}/>
-            <SiMysql size={35}/>
+            <SiMysql size={50}/>
           </SkillsContainerIcons>
           <SkillsContainerIcons
           animate={{opacity:1}}
