@@ -6,12 +6,16 @@ import '@splidejs/react-splide/css';
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
+
 const Portfolio = () => {
+
+  const Letters = ['<span>P</span>','R','O'];
+
   return (
     <>
       <Header/>
         <Wrapper>
-          <h3>Projects</h3>
+        <h3>Projects</h3>
           <Splide options={{
           perPage: 1,
           arrows:true,
@@ -45,15 +49,22 @@ const Portfolio = () => {
 }
 
 const Wrapper = styled.div`
-  margin: 4rem 4rem;
+  margin: 4rem 5%;
   text-align: center;
-  max-width: 1400px;
-
-  @media (min-width: 1400px) {
-
-      margin: 4rem auto;
+  height: 35rem;
+  padding: 1rem 1rem;
+  background-color: #f0ead6;
+  border-radius: 5%;
+  box-shadow: 7px 10px 0px 0px rgba(112, 160, 175);
+  border: solid 1px rgba(112, 160, 175);
+  h3{  
+    display: inline-block;
+    padding: 10px 10px;
+    color: #f0ead6;;
+    background-color: rgba(112, 160, 175);
+    border-radius: 5%;
+    letter-spacing: 2px;
   }
-
 `
 const Card = styled.div`
   min-height: 30rem;
@@ -62,6 +73,7 @@ const Card = styled.div`
   position: relative;
   
   img{
+    width: 80%;
     position: absolute;
     border-radius: 2rem;
     left: 0;
