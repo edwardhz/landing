@@ -5,6 +5,7 @@ import {Splide, SplideSlide} from '@splidejs/react-splide'
 import '@splidejs/react-splide/css';
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 
 const Portfolio = () => {
@@ -14,7 +15,12 @@ const Portfolio = () => {
   return (
     <>
       <Header/>
-        <Wrapper>
+        <Wrapper
+        animate={{opacity:1}}
+        initial={{opacity:0}}
+        exit={{opacity:0}}
+        transition={{duration: 0.5}}
+        >
         <h3>Projects</h3>
           <Splide options={{
           perPage: 1,
@@ -55,7 +61,7 @@ const Portfolio = () => {
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   margin: 4rem 5%;
   text-align: center;
   height: 35rem;
@@ -121,9 +127,10 @@ const Card = styled.div`
     flex-direction: column;
     gap: 10px;
 
-    @media (max-width:425px) {
-      left: 50%;
+    @media (max-width:689px) {
+      left: 25%;
     }
+    
 
     li{
       display: inline-block;
