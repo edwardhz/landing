@@ -29,7 +29,7 @@ const Home = () => {
             <Typewriter
             words={['My Name is Edward Martin and ..', 
             'Im a systems engineer', 
-            'Im really looking forward to working on your project or idea', 
+            'Im really looking forward to working on your project', 
             'Just let me know!!']}
             loop={5}
             typeSpeed={80}
@@ -46,30 +46,30 @@ const Home = () => {
           exit={{opacity:0}}
           transition={{duration: 0.8}}
           >
-            <span><SiHtml5 size={50}/></span>
+            <span><SiHtml5 size={55}/></span>
             
-            <SiCss3 size={50} />
-            <SiJavascript size={50}/>
-            <SiReact size={50}/>
-            <SiLaravel size={50}/>
+            <SiCss3 size={55} />
+            <SiJavascript size={55}/>
+            <SiReact size={55}/>
+            <SiLaravel size={55}/>
           </SkillsContainerIcons>
           <SkillsContainerIcons
           animate={{opacity:1}}
           initial={{opacity:0}}
           exit={{opacity:0}}
-          transition={{duration: 0.9}}
+          transition={{duration: 2}}
           >
-            <SiPostgresql size={50}/>
-            <SiJava size={50}/>
-            <SiMysql size={50}/>
+            <SiPostgresql size={55}/>
+            <SiJava size={55}/>
+            <SiMysql size={55}/>
           </SkillsContainerIcons>
           <SkillsContainerIcons
           animate={{opacity:1}}
           initial={{opacity:0}}
           exit={{opacity:0}}
-          transition={{duration: 1.5}}
+          transition={{duration: 3}}
           >
-            <SiWebpack size={50}/>
+            <SiWebpack size={55}/>
           </SkillsContainerIcons>
         </Container>
     
@@ -100,6 +100,10 @@ const AboutMe = styled(motion.div)`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width:400px) {
+      
+  
+  }
 `
 const Container = styled.div`
   width: 100%;
@@ -112,6 +116,7 @@ const Container = styled.div`
     letter-spacing: 3px;
     margin-bottom: 2rem;
     font-size: 3rem;
+    
   }
   h2{
     font-style: italic;
@@ -124,9 +129,14 @@ const Container = styled.div`
     font-size: 2rem;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 425px) {
     .Writer{
+      font-size: 1rem;
+    }
+
+    h2{
       font-size: 1.5rem;
+
     }
   }
   svg:hover {
@@ -141,6 +151,10 @@ const SkillsContainerIcons = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   margin: 3rem auto;
+
+  @media (max-width: 425px) {
+    margin: 1.5rem auto;
+  }
   
 `
 

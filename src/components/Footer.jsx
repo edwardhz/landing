@@ -11,9 +11,9 @@ const Footer = () => {
         <h5>Edward Martin Hernandez Zambrano</h5>
         <h5>edw123hernandez@gmail.com</h5>
         <div>
-            <DiGithubAlt size={30}/>
+            <DiGithubAlt size={20}/>
             *
-            <SiLinkedin size={25}/>
+            <SiLinkedin size={15}/>
         </div>
         
     </FooterDiv>
@@ -22,7 +22,7 @@ const Footer = () => {
 }
 
 const FooterDiv = styled.div`
-    font-size: 13px;
+    font-size: 15px;
     opacity: 50%;
     width: 100%;
     display: flex;
@@ -31,6 +31,10 @@ const FooterDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    @media (max-width:380px){
+      font-size: 5%;
+    }
+
     div{
         display: flex;
         width: 10%;
