@@ -26,8 +26,6 @@ const FooterDiv = styled.div`
     opacity: 50%;
     width: 100%;
     display: flex;
-    position: absolute;
-    bottom: 0;
     justify-content: center;
     flex-direction: column;
     align-items: center;

@@ -72,7 +72,9 @@ const FormContact = styled(motion.form)`
     outline: none;
     color: black;
     padding: 0.5rem 0.5rem;
-    
+  }
+  @media (max-width:380px) {
+    height: 55vh;
   }
 `
 const InputForm = styled.input`
@@ -84,7 +86,6 @@ const InputForm = styled.input`
   color: black;
   padding: 0.5rem 0.5rem;
 `
-
 const ButtonForm = styled(motion.button)`
   margin-top: 1rem;
   padding: 10px 25px;
@@ -97,14 +98,15 @@ const ButtonForm = styled(motion.button)`
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #b1b1b1;
+  @media (max-width:380px) {
+    margin-top: 0.5rem;
+  }
 :hover {background-color: #577e8b}
-
 :active {
   background-color: #577e8b;
   transform: translateY(2px);
   box-shadow: 0 2px #666;
 }
-  
 `
 
 export default Contact
