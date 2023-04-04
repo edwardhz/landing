@@ -1,11 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import SentMessageModal from '../modals/SentMessageModal';
 
 const Contact = () => {
+  const [modal,setModal] = useState(false);
+  const toggleModal = () =>{
+    setModal(!modal)
+  }
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -15,6 +20,8 @@ const Contact = () => {
       .then((result) => {
           console.log(result.text);
           e.target.reset();
+          setModal(true)
+          
       }, (error) => {
           console.log(error.text);
       });
@@ -22,6 +29,7 @@ const Contact = () => {
   return (
     <>
     <Header/>
+    {modal && <SentMessageModal toggleModal={toggleModal}/>}
     <FormContact ref={form} onSubmit={sendEmail}
     animate={{opacity:1}}
     initial={{opacity:0}}
