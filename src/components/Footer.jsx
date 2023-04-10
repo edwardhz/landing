@@ -13,7 +13,7 @@ const Footer = () => {
         <div>
             <span><DiGithubAlt size={20} onClick={()=>window.open('https://github.com/edwardhz')}/></span>
             *
-            <span><SiLinkedin size={15} onClick={()=>window.open('https://www.linkedin.com/in/edward-martin-hernandez-zambrano-230818260/')}/></span>
+            <span><SiLinkedin size={15} onClick={()=>window.open('https://www.linkedin.com/in/edward-hernandez-230818260')}/></span>
         </div>
         
     </FooterDiv>
