@@ -62,7 +62,7 @@ const FormContact = styled(motion.form)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 5%;
+  border-radius: 40px;
   box-shadow: 7px 10px 0px 0px rgba(112, 160, 175);
   border: solid 1px rgba(112, 160, 175);
   label{
@@ -81,8 +81,9 @@ const FormContact = styled(motion.form)`
     color: black;
     padding: 0.5rem 0.5rem;
   }
-  @media (max-width:380px) {
-    height: 55vh;
+  @media (max-width:390px) {
+    
+    
   }
 `
 const InputForm = styled.input`
@@ -106,8 +107,9 @@ const ButtonForm = styled(motion.button)`
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #b1b1b1;
-  @media (max-width:380px) {
+  @media (max-width:390px) {
     margin-top: 0.5rem;
+    
   }
 :hover {background-color: #577e8b}
 :active {

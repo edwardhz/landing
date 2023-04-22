@@ -88,7 +88,7 @@ const AboutMe = styled(motion.div)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 5%;
+  border-radius: 40px;
   box-shadow: 7px 10px 0px 0px rgba(112, 160, 175);
   border: solid 1px rgba(112, 160, 175);
   svg{

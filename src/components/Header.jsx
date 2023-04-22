@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-    <header>
+    <SHeader>
         
         <div className='logo' >_Edward_Hernandez</div>
             <div className='hamburger' onClick={handleToggle}>
@@ -36,11 +36,16 @@ const Header = () => {
             </ul>
         </nav>
     
-    </header>
+    </SHeader>
     </>
     
   )
 }
+
+const SHeader = styled.header`
+    cursor: default;
+
+`
 
 const SLink = styled(NavLink)`
         display: block;
@@ -51,7 +56,7 @@ const SLink = styled(NavLink)`
         transition: 0.5s;
         margin: 0 5px;
         margin-bottom: 12px;
-
+        
     :hover{
         color: rgb(112, 160, 175);
         background: rgb(244, 232, 193);
